@@ -20,7 +20,7 @@ const NoteEditor = ({ note, onSave }) => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://harsh2004.pythonanywhere.com/process_note', {
+      const response = await fetch('https://twinkle2004.pythonanywhere.com/process_note', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content }),
